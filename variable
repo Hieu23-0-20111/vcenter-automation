@@ -1,0 +1,34 @@
+variable "vsphere_user" {}
+variable "vsphere_password" {}
+variable "vsphere_server" {}
+
+variable "datacenter" {}
+variable "datastore" {}
+variable "cluster" {}
+variable "network" {}
+
+variable "vm_name" {}
+variable "vm_count" {
+  default = 1
+}
+variable "vm_num_cpus" {
+  default = 2
+}
+variable "vm_memory" {
+  default = 4096
+}
+variable "guest_id" {
+  default = "otherGuest64"
+}
+variable "adapter_type" {
+  default = "vmxnet3"
+}
+variable "disk_size" {
+  default = 20
+}
+variable "domain" {}
+variable "ip_addresses" {
+  type = list(string)
+}
+variable "netmask" {}
+variable "gateway" {}
